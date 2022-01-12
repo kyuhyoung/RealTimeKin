@@ -11,7 +11,7 @@ def parallelIK(ikSolver, s0, ik, time_stamp):
     ik.put([time.time()-time_stamp])
     time.sleep(0.005)
 
-def readIMU(q, b, fake_online_data, init_time, signals_per_sensor, save_dir_init,home_dir):
+def readIMU(q, b, fake_online_data, init_time, signals_per_sensor, save_dir_init, home_dir):
     # Load the initialization information about the sensors
     tca_inds = []
     num_parts = 0
@@ -22,7 +22,7 @@ def readIMU(q, b, fake_online_data, init_time, signals_per_sensor, save_dir_init
     sim_len = 600
     # Defining the external signal trigger
     imu_only = False
-    with open(home_dir+'settings.txt', 'r') as f:
+    with open(home_dir + 'settings.txt', 'r') as f:
         for cnt, line in enumerate(f):
             old_lines.append(line)
             if cnt == 0:
