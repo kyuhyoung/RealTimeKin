@@ -49,6 +49,7 @@ if __name__ == "__main__":
     save_file = '/recording_'
     ts_file = '/timestamp_'
     script_live = True
+    
 
     q = Queue() # queue for IMU messages
     b = Queue() # queue for button messages
