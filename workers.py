@@ -5,6 +5,7 @@ import ahrs
 import numpy as np
 import os
 
+
 def parallelIK(ikSolver, s0, ik, time_stamp):
     ikSolver.track(s0)
     ik.put([time.time()-time_stamp])
